@@ -1,0 +1,791 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #3e3e3e;
+  font-family: Helvetica, sans-serif;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+.subtitle {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+#header {
+  background-color: #f7f7f7;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.container {
+  margin-left: 2.25rem;
+  margin-right: 2.25rem;
+}
+.logo {
+  height: 3rem;
+  margin-left: 2.125rem;
+}
+nav {
+  display: flex;
+  height: 8.75rem;
+  align-items: center;
+  max-width: 100%;
+  align-items: center;
+}
+
+nav .menu ul li a {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+.menu ul li a {
+  margin-left: 2rem;
+}
+nav .conta {
+  margin-left: 20rem;
+}
+
+nav .conta a {
+  display: inline-block;
+  padding-right: 1.687rem;
+  padding-left: 1.687rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+nav .conta .criar {
+  background-color: #f7f7f7;
+  color: #ea1d2c;
+  border-radius: 0.375rem;
+}
+nav .conta .entrar {
+  background-color: #ea1d2c;
+  color: white;
+  margin-left: 1.5rem;
+  border-radius: 0.375rem;
+  transition: color 0.5s;
+}
+nav .conta .entrar:hover {
+  background-color: #c2121f;
+}
+#delivery {
+  align-items: center;
+  margin-top: 11rem;
+}
+
+#delivery .text {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+#delivery .text h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+#delivery .text p {
+  color: #717171;
+}
+
+.form-cta {
+  margin-top: 1.562rem;
+  font-family: Helvetica, sans-serif;
+}
+
+.form-cta input {
+  width: 42.675rem;
+  height: 2.812rem;
+  margin-right: 1.312rem;
+  padding-left: 3.75rem;
+  border: white;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  color: #a6a6a6;
+}
+
+.form-cta a {
+  display: inline-block;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  font-weight: 700;
+  background-color: #ea1d2c;
+  color: white;
+  border-radius: 0.25rem;
+}
+
+#delivery .giants .OneButton {
+  background-color: #ea1d2c;
+  padding-bottom: 13rem;
+  padding-right: 25rem;
+  border-radius: 1.25rem;
+  margin-left: 14rem;
+}
+#delivery .giants .burguer h2 {
+  color: white;
+  margin-left: 15.5rem;
+  margin-top: 0.5rem;
+  font-family: Helvetica, sans-serif;
+  font-size: 2.25rem;
+}
+#delivery .burguer .imageg {
+  margin-left: 24rem;
+  margin-top: -0.25rem;
+}
+#delivery .giants .TwoButton {
+  background-color: #b6d048;
+  padding-bottom: 13rem;
+  padding-right: 25rem;
+  border-radius: 1.25rem;
+  margin-right: 14rem;
+}
+#delivery .giants .market h2 {
+  color: white;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  font-family: Helvetica, sans-serif;
+  font-size: 2.25rem;
+}
+#delivery .market .images {
+  margin-left: 10rem;
+  margin-top: -1.5rem;
+}
+#delivery .giants {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 6.125rem;
+}
+
+#delivery figure.fig-drink {
+  margin: 0;
+  padding: 0;
+  width: 11.75rem;
+  height: 2.75rem;
+  border-radius: 0.375rem;
+  position: relative;
+  background-color: #f6d553;
+
+  margin-bottom: 2rem;
+}
+#delivery .normal img.drink {
+  position: absolute;
+  bottom: 0;
+  right: 1.5rem;
+}
+
+#delivery figure.fig-pharmacy {
+  margin: 0;
+  padding: 0;
+  width: 11.75rem;
+  height: 2.75rem;
+  border-radius: 0.375rem;
+  position: relative;
+  background-color: #f9879c;
+
+  margin-bottom: 2rem;
+}
+#delivery .normal img.pharmacy {
+  position: absolute;
+  bottom: 0;
+  right: 2.8rem;
+}
+#delivery figure.fig-express {
+  margin: 0;
+  padding: 0;
+  width: 11.75rem;
+  height: 2.75rem;
+  border-radius: 0.375rem;
+  position: relative;
+  background-color: #ea1d2c;
+
+  margin-bottom: 2rem;
+}
+#delivery .normal img.express {
+  position: absolute;
+  bottom: 0;
+  right: 2.8rem;
+}
+#delivery figure.fig-petshop {
+  margin: 0;
+  padding: 0;
+  width: 11.75rem;
+  height: 2.75rem;
+  border-radius: 0.375rem;
+  position: relative;
+  background-color: #8c60c5;
+}
+#delivery .normal img.petshop {
+  position: absolute;
+  bottom: 0;
+  right: 1.5rem;
+}
+#delivery .normal {
+  display: grid;
+  justify-content: space-around;
+  grid-auto-flow: column;
+  margin: 0 12rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#delivery .sub {
+  display: grid;
+  justify-content: space-around;
+  grid-auto-flow: column;
+  margin: 0 12rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: -0.625rem;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 7rem;
+}
+#delivery .normal figure:hover,
+#delivery .sub a {
+  transform: translateY(-5px);
+}
+.icon-chevron-right {
+  color: red;
+}
+#delivery .container {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+#mr {
+  padding-top: 4.25rem;
+  background-color: white;
+  padding-bottom: 4.5rem;
+}
+#mr h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 2.687rem;
+}
+.b-restaurant {
+  display: flex;
+  justify-content: space-around;
+}
+.b-restaurant article {
+  padding: 1.25rem;
+  margin: 0.312rem;
+  background: white;
+  opacity: 0.9;
+  border-radius: 1rem;
+  width: 15rem;
+  height: 8.125rem;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+}
+.b-restaurant img {
+  height: 2.875rem;
+  clip-path: circle();
+}
+.text-b {
+  font-family: Helvetica, sans-serif;
+}
+.text-b h3 {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.text-b p {
+  font-size: 0.75rem;
+  color: #717171;
+}
+.promotion {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3.125rem;
+  margin-bottom: 4.5rem;
+}
+.b-market img {
+  height: 2.875rem;
+  clip-path: circle();
+}
+.b-market {
+  border-top: 1px solid #dcdcdc;
+}
+.box {
+  display: flex;
+  justify-content: space-around;
+}
+.b-market h2 {
+  margin-top: 3.75rem;
+}
+.b-market article {
+  padding: 1.25rem;
+  margin: 0.312rem;
+  background: white;
+  opacity: 0.9;
+  border-radius: 1rem;
+  width: 15rem;
+  height: 8.125rem;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+}
+#ds {
+  background-color: white;
+  padding-bottom: 6.25rem;
+}
+#ds .container {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+#ds .delivery-man {
+  display: flex;
+  max-width: 29rem;
+  height: 22rem;
+}
+#ds .delivery-man img {
+  margin-top: 10rem;
+}
+#ds .text {
+  margin-left: 2rem;
+}
+#ds h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+#ds p {
+  margin-bottom: 1.5rem;
+  color: #717171;
+  font-weight: 500;
+}
+#ds a {
+  display: inline-block;
+  padding-right: 1.687rem;
+  padding-left: 1.687rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  background-color: #ea1d2c;
+  font-weight: 700;
+  border-radius: 0.375rem;
+  color: white;
+}
+#ds .store {
+  display: flex;
+  max-width: 29rem;
+  height: 22rem;
+}
+#ds .store img {
+  margin-top: 10rem;
+}
+#carrer {
+  background: white;
+}
+#carrer .container {
+  border-top: 1px solid #dcdcdc;
+  padding-top: 5.25rem;
+  display: flex;
+  justify-content: space-around;
+}
+#carrer h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+#carrer p {
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 1.5rem;
+  color: #717171;
+  font-weight: 500;
+}
+#carrer a {
+  display: inline-block;
+  padding-right: 1.687rem;
+  padding-left: 1.687rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  background-color: #ea1d2c;
+  font-weight: 700;
+  border-radius: 0.375rem;
+  color: white;
+}
+#carrer .text {
+  max-width: 18.75rem;
+}
+#carrer .text h2 {
+  max-width: 10.5rem;
+  font-weight: 550;
+}
+#carrer img {
+  margin-left: -8.875rem;
+}
+#ifood-card {
+  background: white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+#ifood-card img {
+  cursor: pointer;
+}
+#explorer {
+  background: white;
+}
+#explorer .container {
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 3rem;
+}
+#explorer header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2.5rem;
+}
+#explorer header .ver {
+  margin-right: -1rem;
+  color: #ea1d2c;
+}
+#explorer .colunas {
+  display: flex;
+  justify-content: space-around;
+}
+#explorer .elements {
+  display: grid;
+}
+#explorer .colunas a {
+  margin-left: -7rem;
+  margin-top: 2.125rem;
+  color: #717171;
+  transition: 0.15s;
+}
+#explorer .colunas a:hover {
+  color: black;
+}
+#explorer .last {
+  margin-top: 0rem;
+  margin-bottom: 7rem;
+}
+#explorer h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.25rem;
+  color: #3e3e3e;
+  font-weight: 600;
+}
+#pre-footer {
+  padding-top: 3rem;
+  background: white;
+}
+#pre-footer .colunas {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 26rem;
+}
+#pre-footer .ifood {
+  display: grid;
+}
+#pre-footer .descubra {
+  display: grid;
+  max-width: 13.75rem;
+  margin-left: 11rem;
+}
+#pre-footer .ifood a {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-family: Helvetica, sans-serif;
+  color: #717171;
+  transition: 0.3s;
+}
+#pre-footer .descubra a {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-family: Helvetica, sans-serif;
+  color: #717171;
+}
+#pre-footer .sociais h3 {
+  margin-bottom: 2rem;
+}
+#pre-footer i {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #717171;
+}
+#pre-footer h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #3e3e3e;
+}
+#pre-footer i:hover {
+  color: black;
+}
+#pre-footer .colunas a {
+  transition: 0.3s;
+}
+#pre-footer .colunas a:hover {
+  color: black;
+}
+#pre-footer .container {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: white;
+}
+footer img {
+  margin-right: 1rem;
+}
+footer .colunas {
+  display: flex;
+}
+footer .copy {
+  display: grid;
+  max-width: 33rem;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.812rem;
+  color: #717171;
+}
+footer .button {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+footer .button a {
+  margin-right: 1rem;
+  color: #717171;
+}
+@media (max-width: 400px) {
+  body {
+    overflow-x: visible;
+  }
+
+  nav .menu ul li a {
+    visibility: hidden;
+    opacity: 0;
+  }
+  nav .conta {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: -7rem;
+  }
+  nav .conta .criar {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .menu {
+    visibility: hidden;
+    opacity: 0;
+    max-width: 0rem;
+  }
+  #delivery .text h2 {
+    font-size: 1rem;
+  }
+  #delivery .text p {
+    font-size: 0.875rem;
+    max-width: 12rem;
+    margin-left: 4.5rem;
+  }
+  .form-cta input {
+    width: 20rem;
+  }
+  .form-cta a {
+    margin-top: 1rem;
+    padding-left: 8rem;
+    padding-right: 8.3rem;
+
+    text-align: center;
+  }
+  #delivery .giants .OneButton {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -0.8rem;
+    margin-right: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 10rem;
+    padding-right: 10rem;
+  }
+  #delivery .giants .burguer h2 {
+    font-size: 1.25rem;
+    margin: 0 1.2rem;
+  }
+  #delivery .burguer .imageg {
+    height: 6rem;
+    margin: 1rem 0rem;
+  }
+  #delivery .giants .TwoButton {
+    margin: 0 0;
+    padding-bottom: 10.5rem;
+    padding-right: 10rem;
+  }
+  #delivery .giants .market h2 {
+    font-size: 1.25rem;
+    margin: 0 2.5rem;
+  }
+  #delivery .market .images {
+    height: 7rem;
+    margin: 1rem 0.8rem;
+  }
+  #delivery figure.fig-drink {
+    width: 6.25rem;
+    height: 1.5rem;
+    margin: 0 0rem;
+  }
+  #delivery figure.fig-pharmacy {
+    width: 6.25rem;
+    height: 1.5rem;
+    margin: 0 1rem;
+  }
+  #delivery figure.fig-express {
+    width: 6.25rem;
+    height: 1.5rem;
+    margin: 0 1rem;
+  }
+  #delivery figure.fig-petshop {
+    visibility: hidden;
+    opacity: 0;
+  }
+  #delivery .normal {
+    margin-right: 0rem;
+  }
+  #delivery .normal img.drink {
+    height: 4rem;
+    margin: 0 -1.4rem;
+  }
+  #delivery .normal img.pharmacy {
+    height: 4rem;
+    margin: 0 -2.1rem;
+  }
+  #delivery .normal img.express {
+    height: 4rem;
+    margin: 0 -1.8rem;
+  }
+  #delivery .sub .pet-sub {
+    visibility: hidden;
+    opacity: 0;
+  }
+  #delivery .sub {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #delivery .sub a {
+    font-size: 0.8rem;
+  }
+  #delivery .sub .bebida {
+    margin-left: 0rem;
+    display: grid;
+  }
+  #delivery .sub .farmacia {
+    margin-left: 4rem;
+    display: grid;
+  }
+  #delivery .sub .cel {
+    margin-left: 5rem;
+    display: grid;
+  }
+  #mr h2 {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .b-restaurant article {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+  }
+  .b-market article {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+  }
+  #ds .container {
+    display: grid;
+  }
+  #ds h2 {
+    font-size: 1.125rem;
+  }
+  #ds a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+  #ds .delivery-man img {
+    height: 8rem;
+  }
+  #ds .store img {
+    height: 8rem;
+  }
+  #ds .store {
+    max-width: 400px;
+  }
+  #ds .delivery-man {
+    max-width: 400px;
+  }
+  #carrer .container {
+    display: grid;
+    text-align: center;
+  }
+  #carrer img {
+    order: 0;
+    height: 15rem;
+  }
+  #carrer .text {
+    text-align: center;
+    order: 1;
+  }
+  #carrer h2 {
+    font-size: 1.125rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+  }
+  #ifood-card img {
+    height: 5rem;
+  }
+  #explorer .colunas {
+    display: grid;
+  }
+  #explorer header {
+    margin: 0 0;
+  }
+  #pre-footer .colunas {
+    display: grid;
+    padding-right: 0;
+  }
+  #pre-footer .colunas .ifood {
+    margin-left: -3rem;
+  }
+  #pre-footer .colunas .descubra {
+    margin-left: -3rem;
+  }
+  #pre-footer .colunas .sociais {
+    margin-left: -3rem;
+  }
+  #pre-footer .colunas h3 {
+    margin-top: 3rem;
+  }
+  footer .colunas {
+    display: grid;
+  }
+  footer .imgcopy {
+    display: flex;
+  }
+  footer .button {
+    display: grid;
+  }
+  footer .button a {
+    margin-top: 2rem;
+  }
+}
